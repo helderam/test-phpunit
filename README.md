@@ -1,10 +1,8 @@
 # test-phpunit
 
-using phpunit example to create a test
+Using phpunit example to create a test. Link: https://phpunit.de/getting-started/phpunit-8.html
 
-from: https://phpunit.de/getting-started
-
-Create a directory and change to him, and execute below command:
+Create a directory and change to it, and execute below command:
 
 ```bash
  composer require --dev phpunit/phpunit
@@ -25,7 +23,7 @@ This will create a composer.json file and a vendor directory with all the code n
 }
 ```
 
-If you versed your code, create a .gitignore file with this content at https://github.com/sebastianbergmann/phpunit/blob/master/.gitignore
+if versioning your code, create a .gitignore file with this content at https://github.com/sebastianbergmann/phpunit/blob/master/.gitignore
 
 After that check the PHPUnit version with the command below.
 
@@ -33,12 +31,12 @@ After that check the PHPUnit version with the command below.
 ./vendor/bin/phpunit --version
 ```
 
-Create a src/ directory where the sources were and the tests/ directory where the tests were.
+Create a src/ directory for the sources and another one named tests/ for the tests classes.
 
 Then create the main class in src/Email.php and the test class tests/EmailTest.php, and run the test using PHPUnit
 
 ```bash
-./vendor/bin/phpunit --bootstrap vendor / autoload.php tests / EmailTest
+./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/EmailTest
 ```
 
 If "Error: Class 'Email' not found" error message appears, execute the command below:
@@ -50,5 +48,5 @@ composer dump
 Below is a more readable way to see test results:
 
 ```bash
-./vendor/bin/phpunit --bootstrap vendor / autoload.php --testdox tests
+./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox tests
 ```
