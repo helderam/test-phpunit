@@ -12,7 +12,7 @@ Create a directory and change to him, and execute below command:
 
 This will create a composer.json file and a vendor directory with all the code needed to perform your tests. Make sure your composer.json is as follows:
 
-```json
+```bash
 {
     "autoload": {
         "classmap": [
@@ -44,7 +44,7 @@ Then create the main class in src/Email.php and the test class tests/EmailTest.p
 If "Error: Class 'Email' not found" error message appears, execute the command below:
 
 ```json
-dump composer
+composer dump 
 ```
 
 Below is a more readable way to see test results:
