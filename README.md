@@ -45,7 +45,7 @@ If "Error: Class 'Email' not found" error message appears, execute the command b
 composer dump 
 ```
 
-Below is a more readable way to see test results:
+Below is a clearer way to see test results:
 
 ```bash
 ./vendor/bin/phpunit --bootstrap vendor/autoload.php --testdox tests
